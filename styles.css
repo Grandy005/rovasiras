@@ -2,6 +2,9 @@ body {
     margin: 0px;
     font-family: "Web_OldHungarian", sans-serif;
     background-color: #f1edee;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
 .container {
@@ -56,7 +59,7 @@ button {
 }
   
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover, .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
 }
   
